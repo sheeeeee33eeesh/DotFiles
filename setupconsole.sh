@@ -45,5 +45,3 @@ tar -xzvf /opt/bat.tar.gz && rm bat.tar.gz
 mv /opt/bat-v0.24.0-x86_64-unknown-linux-gnu/ /opt/bat
 ln -s /opt/bat/bat /usr/bin/
 cd -
-
-chsh -s $(which fish)
