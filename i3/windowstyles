@@ -1,0 +1,22 @@
+# Set Window Gap Sizes
+gaps inner 20px
+
+# Set r Size
+default_border pixel 6 
+
+# Turn on smart borders
+smart_borders on
+
+# Turn on smart gaps
+smart_gaps on
+
+# 
+set $transp       #00000000
+
+#class                  border    backgr.  text     indicator  child_border
+client.focused           #AE00FF   #AE00FF  #AE00FF  #AE00FF    #AE00FF 
+client.focused_inactive  $transp   $transp  $transp  $transp    $transp 
+client.unfocused         $transp   $transp  $transp  $transp    $transp
+client.background        $transp
+
+

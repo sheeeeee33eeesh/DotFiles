@@ -1,0 +1,6 @@
+# Start i3 bar only on DP-2 with i3 config file
+bar {
+        position top
+        status_command i3status -c /home/elitegaming/.config/i3/i3status
+        font pango: Hack Nerd Font Mono Regular 16
+}
