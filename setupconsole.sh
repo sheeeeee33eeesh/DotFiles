@@ -46,6 +46,4 @@ mv /opt/bat-v0.24.0-x86_64-unknown-linux-gnu/ /opt/bat
 ln -s /opt/bat/bat /usr/bin/
 cd -
 
-nvim +PackerInstall
-
-fish
+chsh -i $(which fish)
