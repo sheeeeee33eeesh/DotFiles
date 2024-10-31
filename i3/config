@@ -44,4 +44,4 @@ include ~/.config/i3/windowstyles
 include ~/.config/i3/bar
 
 # Fix Bar
-exec --no-startup-id /home/elitegaming/.config/i3/scripts/fixbar.sh
+exec --no-startup-id ~/.config/i3/scripts/fixbar.sh

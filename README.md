@@ -1,5 +1,7 @@
 # Arch Linux / Debian / I3 / NVIM / FISH Dotfiles
 
+![](./demo.png)
+
 **Setup I3 and GUI Apps**
 [setupgui.sh](https://github.com/sheeeeee33eeesh/DotFiles/blob/master/setupgui.sh)
 

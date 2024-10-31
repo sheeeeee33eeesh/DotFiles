@@ -11,8 +11,8 @@ require'cmp'.setup {
       ['<C-j>'] = cmp.mapping.scroll_docs(4),
       ['<C-Space>'] = cmp.mapping.complete(),
       ['<C-e>'] = cmp.mapping.abort(),
-      ['<Tab>'] = cmp.mapping.confirm({ select = true }),
-      ['<CR>'] = cmp.mapping.confirm({ select = true }),
+      ['<C-c>'] = cmp.mapping.confirm({ select = true }),
+     -- ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
   sources = {
     { name = 'buffer' },

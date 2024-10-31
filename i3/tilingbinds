@@ -1,18 +1,26 @@
 # Change Window Focus
 bindsym $mod+Ctrl+Left focus left
+bindsym $mod+Ctrl+h focus left
 bindsym $mod+Ctrl+Down focus down
+bindsym $mod+Ctrl+j focus down
 bindsym $mod+Ctrl+Up focus up
+bindsym $mod+Ctrl+k focus up
 bindsym $mod+Ctrl+Right focus right
+bindsym $mod+Ctrl+l focus right
 
 # Move Focused Window
 bindsym $mod+Left move left
+bindsym $mod+h move left
 bindsym $mod+Down move down
+bindsym $mod+j move down
 bindsym $mod+Up move up
+bindsym $mod+k move up
 bindsym $mod+Right move right
+bindsym $mod+l move right
 
 # Change Splitting Action
-bindsym $mod+h split h
-bindsym $mod+v split v
+bindsym $mod+minus split h
+bindsym $mod+equal split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle

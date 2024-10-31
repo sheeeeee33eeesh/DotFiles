@@ -4,7 +4,8 @@ tiling_drag modifier titlebar
 # Set Font 
 font pango: jetbrains mono nerd 12
 
-# Setup Displays exec --no-startup-id autorandr normal
+# Setup Displays
+#exec --no-startup-id autorandr normal
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -17,7 +18,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- bash -c 'i3lock -tfei ~/.
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 #exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
+#exec --no-startup-id blueman-applet
 
 # Start flameshot
 exec --no-startup-id flameshot
@@ -31,17 +32,11 @@ exec --no-startup-id rclone --vfs-cache-mode writes mount GoogleDrive: /mnt/Clou
 # RICE Startup Apps/wallpaper/Monitor Initiate
 exec --no-startup-id "~/.config/i3/scripts/slideshowwallpaper.sh"
 
-# Brightness Script
-exec --no-startup-id "~/.config/i3/scripts/brightness.sh"
-
-# Other Script
-
-
 # Startup Discord MInimized
 exec --no-startup-id discord-canary --start-minimized
 
 
 
 # Set Brightness 100%
- exec --no-startup-id sudo light -S 100
+ exec --no-startup-id sudo light -S 100 && light > ~/.config/brightness
 

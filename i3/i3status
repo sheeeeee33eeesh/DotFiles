@@ -25,11 +25,11 @@ order += "tztime local"
 
 cpu_temperature 1 {
 	format = "VB: %degrees °F"
-	path = "/home/elitegaming/.config/weather"
+	path = "~/.config/weather"
 }
 
 volume master {
-        format = "♪: %volume"
+        format = "Audio: %volume"
         format_muted = "♪: muted (%volume)"
         device = "default"
         mixer = "Master"
@@ -37,8 +37,8 @@ volume master {
 }
 
 read_file brightness {
-  format = "☀️  %content%"
-  path = "/home/elitegaming/.config/brightness"
+  format = " Brightness: %content%"
+  path = "~/.config/brightness"
 }
 
 ethernet tun0 {
@@ -73,8 +73,8 @@ load {
 
 memory {
         format = "Memory: %used"
-        threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+        threshold_degraded = "2G"
+        format_degraded = "⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️MEMORY: %used ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️"
 }
 
 tztime local {

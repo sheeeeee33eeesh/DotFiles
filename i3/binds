@@ -5,16 +5,17 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+k exec i3-msg exit
+bindsym $mod+Ctrl+Shift+k exec i3-msg exit
 
 # Lock Computer
-bindsym $mod+l exec i3lock -tfei ~/.config/i3/wallpapers/archgirl9.png
+bindsym $mod+Shift+l exec i3lock -tfei ~/.config/i3/wallpapers/SFW/space.png
 
 # Hibernate
-bindsym $mod+Ctrl+Shift+l exec bash -c ' systemctl suspend-then-hibernate && i3lock -tfei ~/.config/i3/wallpapers/archgirl9.png'
+bindsym $mod+Ctrl+Shift+l exec bash -c ' systemctl suspend-then-hibernate && i3lock -tfei ~/.config/i3/wallpapers/SFW/space.png'
 
 # start a terminal
 bindsym $mod+q exec --no-startup-id kitty
+#bindsym $mod+q exec --no-startup-id kitty --
 
 # kill focused window
 bindsym $mod+x kill
@@ -52,9 +53,11 @@ bindsym $mod+c exec google-chrome-stable --new-window https://www.microsoft365.c
 bindsym $mod+o exec google-chrome-stable --new-window https://www.microsoft365.com/
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volumeup.sh 
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volumedown.sh
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume 0 0
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioRaiseVolume+Shift exec --no-startup-id pactl set-sink-volume 0 +1%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioLowerVolume+Shift exec --no-startup-id pactl set-sink-volume 0 -1%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play-pause
@@ -63,8 +66,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume 0 0
 #bindsym XF86AudioPrev exec playerctl previous
 
 # Brightness Controls
-bindsym XF86MonBrightnessUp exec sudo light -A 5
-bindsym Shift+XF86MonBrightnessUp exec sudo light -A 1
-bindsym XF86MonBrightnessDown exec sudo light -U 5
-bindsym Shift+XF86MonBrightnessDown exec sudo light -U 1
-
+bindsym XF86MonBrightnessUp exec sudo light -A 5 && light > ~/.config/brightness
+bindsym Shift+XF86MonBrightnessUp exec sudo light -A 1 && light > ~/.config/brightness
+bindsym XF86MonBrightnessDown exec sudo light -U 5 && light > ~/.config/brightness
+bindsym Shift+XF86MonBrightnessDown exec sudo light -U 1 && light > ~/.config/brightness
