@@ -21,7 +21,7 @@ if status is-interactive
 
    # Binds
    fzf_configure_bindings --variables=\e\cv
-   bind \el 'ls -lah'
+   bind \el 'ls -lah ; echo -e "\n" ; commandline -f repaint'
 
 
 
@@ -63,9 +63,15 @@ if status is-interactive
    alias ip="ip -c"
    alias SLEEPOFF="xset s off -dpms"
    alias SLEEPON="xset s on -dpms"
+   alias SUM='tr "\n" "+"| sed "s/.\$//g"| math'
 
 
    export EDITOR=/usr/bin/nvim
    export PAGER=cat
 
 end
+
+# for i in (seq 00 99) ; echo $i ; end
+# while true ; ls -l ; end
+# while read line ; echo $line ; end < file.txt
+# cat file.txt | while read line ; echo $line ; end

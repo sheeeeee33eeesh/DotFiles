@@ -1,3 +1,5 @@
+local render-markdown = require('render-markdown')
+
 require('render-markdown').setup({
     -- Whether Markdown should be rendered by default or not
     enabled = true,

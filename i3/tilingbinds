@@ -30,8 +30,8 @@ bindsym $mod+Shift+space floating toggle
 
 # Resize Windows
 bindsym $mod+Shift+Left resize shrink width 5 px or 5 ppt
-bindsym $mod+Shift+Down resize grow height 5 px or 5 ppt
-bindsym $mod+Shift+Up resize shrink height 5 px or 5 ppt
+bindsym $mod+Shift+Up resize grow height 5 px or 5 ppt
+bindsym $mod+Shift+Down resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+Right resize grow width 5 px or 5 ppt
 
 # switch to workspace

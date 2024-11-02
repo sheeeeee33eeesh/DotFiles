@@ -8,10 +8,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Ctrl+Shift+k exec i3-msg exit
 
 # Lock Computer
-bindsym $mod+Shift+l exec i3lock -tfei ~/.config/i3/wallpapers/SFW/space.png
+bindsym $mod+Shift+l exec --no-startup-id i3lock -fekti ~/.config/i3/wallpapers/SFW/space.png --indicator --ring-width 10 --inside-color=ffffff
 
 # Hibernate
-bindsym $mod+Ctrl+Shift+l exec bash -c ' systemctl suspend-then-hibernate && i3lock -tfei ~/.config/i3/wallpapers/SFW/space.png'
+bindsym $mod+Ctrl+Shift+l exec systemctl hibernate
 
 # start a terminal
 bindsym $mod+q exec --no-startup-id kitty
