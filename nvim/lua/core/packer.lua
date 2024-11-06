@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
     }
   }
+  use "lukas-reineke/indent-blankline.nvim"
   use 'windwp/nvim-autopairs'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'

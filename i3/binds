@@ -11,7 +11,7 @@ bindsym $mod+Ctrl+Shift+k exec i3-msg exit
 bindsym $mod+Shift+l exec --no-startup-id i3lock -fekti ~/.config/i3/wallpapers/SFW/space.png --indicator --ring-width 10 --inside-color=ffffff
 
 # Hibernate
-bindsym $mod+Ctrl+Shift+l exec systemctl hibernate
+bindsym $mod+Ctrl+Shift+l exec systemctl hybrid-sleep
 
 # start a terminal
 bindsym $mod+q exec --no-startup-id kitty
@@ -53,10 +53,10 @@ bindsym $mod+c exec google-chrome-stable --new-window https://www.microsoft365.c
 bindsym $mod+o exec google-chrome-stable --new-window https://www.microsoft365.com/
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioRaiseVolume+Shift exec --no-startup-id pactl set-sink-volume 0 +1%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioLowerVolume+Shift exec --no-startup-id pactl set-sink-volume 0 -1%
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh up5
+bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh up1
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh down5
+bindsym Shift+XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume.sh down1
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Media player controls

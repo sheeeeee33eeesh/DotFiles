@@ -10,9 +10,6 @@ if status is-interactive
    set LANG en_US.UTF-8
    set PAGER cat
    set EDITOR nvim
-   set ROCKYOU /usr/share/wordlists/rockyou.txt
-   set COMMON /usr/share/dirb/wordlists/common.txt
-   set MEDIUM /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
    fish_add_path ~/.local/bin/
 
    # Options
@@ -60,6 +57,8 @@ if status is-interactive
    alias AG7="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl7.png && kill $(pgrep -f slideshowwallpaper.sh)"
    alias AG8="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl8.png && kill $(pgrep -f slideshowwallpaper.sh)"
    alias AG9="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl9.png && kill $(pgrep -f slideshowwallpaper.sh)"
+   alias AG10="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl10.png && kill $(pgrep -f slideshowwallpaper.sh)"
+   alias AG11="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl11.png && kill $(pgrep -f slideshowwallpaper.sh)"
    alias ip="ip -c"
    alias SLEEPOFF="xset s off -dpms"
    alias SLEEPON="xset s on -dpms"

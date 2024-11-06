@@ -11,7 +11,7 @@ font pango: jetbrains mono nerd 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# #xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -fekti ~/.config/i3/wallpapers/SFW/space.png --indicator --ring-width 10 --inside-color=ffffff
 
@@ -27,15 +27,13 @@ exec --no-startup-id flameshot
 exec --no-startup-id compfy
 
 #Mounts OneDrive
-exec --no-startup-id rclone --vfs-cache-mode writes mount GoogleDrive: /mnt/CloudDrive
+exec --no-startup-id rclone --vfs-cache-mode=full --vfs-cache-max-size=200G --vfs-cache-max-age=12h --dir-cache-time=1000h --cache-dir /home/elitegaming/.config/rclone.cache/ mount GoogleDrive: /mnt/CloudDrive
 
 # RICE Startup Apps/wallpaper/Monitor Initiate
 exec --no-startup-id "~/.config/i3/scripts/slideshowwallpaper.sh"
 
 # Startup Discord MInimized
 exec --no-startup-id discord-canary --start-minimized
-
-
 
 # Set Brightness 100%
  exec --no-startup-id sudo light -S 100 && light > ~/.config/brightness
