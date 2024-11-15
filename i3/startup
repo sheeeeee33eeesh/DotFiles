@@ -33,7 +33,7 @@ exec --no-startup-id rclone --vfs-cache-mode=full --vfs-cache-max-size=200G --vf
 exec --no-startup-id "~/.config/i3/scripts/slideshowwallpaper.sh"
 
 # Startup Discord MInimized
-exec --no-startup-id discord-canary --start-minimized
+exec --no-startup-id discord --start-minimized
 
 # Set Brightness 100%
  exec --no-startup-id sudo light -S 100 && light > ~/.config/brightness

@@ -40,7 +40,7 @@ bindsym $mod+e exec thunar
 bindsym $mod+Shift+e exec "kitty -- 'lf'"
 
 # Open Discord
-bindsym $mod+d exec discord-canary
+bindsym $mod+d exec discord
 
 # Open Youtube
 bindsym $mod+y exec google-chrome-stable --new-window https://www.youtube.com/
