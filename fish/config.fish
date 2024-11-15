@@ -63,6 +63,7 @@ if status is-interactive
    alias SLEEPOFF="xset s off -dpms"
    alias SLEEPON="xset s on -dpms"
    alias SUM='tr "\n" "+"| sed "s/.\$//g"| math'
+   alias RENDER="kitten icat"
 
 
    export EDITOR=/usr/bin/nvim
