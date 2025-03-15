@@ -1,0 +1,169 @@
+* {
+   border: none;
+   font-size: 14.5px;
+   font-family: Hack Nerd Font;
+}
+
+window#waybar {
+   background: transparent;
+}
+
+#netadapters{
+   background-color: #FFFFFF;
+   opacity: 1;
+   border-radius: 15px;
+   padding-left: 5px;
+   padding-right: 5px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#performance {
+   background-color: #FFFFFF;
+   opacity: 1;
+   padding-left: 5px;
+   padding-right: 5px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#network {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#cpu {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#memory {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#disk {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#workspaces {
+   opacity: 1;
+   background-color: #FFFFFF;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#workspaces button.active {
+   opacity: 1; background-color: #EEEEEE;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#idle_inhibitor {
+   background-color: #FFFFFF;
+   opacity: 1;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#battery {
+   background-color: #FFFFFF;
+   opacity: 1;
+   padding-left: 15px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#clock {
+   background-color: #FFFFFF;
+   color: #000000;
+   opacity: 1;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#tray {
+   background-color: #FFFFFF;
+   opacity: 1;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#pulseaudio {
+   background-color: #FFFFFF;
+   color: #000000;
+   opacity: 1;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#mpd {
+   opacity: 1;
+   background-color: #FFFFFF;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#window {
+   background-color: #FFFFFF;
+   opacity: 1;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#network {
+   opacity: 1;
+   background-color: #FFFFFF;
+   padding-left: 5px;
+   padding-right: 5px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#backlight {
+   opacity: 1;
+   background-color: #FFFFFF;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+#custom-weather {
+   opacity: 1;
+   background-color: #FFFFFF;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 15px;
+   transition-property: all;
+   transition-duration: .3s;
+   color: #000000;
+}

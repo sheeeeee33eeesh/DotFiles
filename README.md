@@ -1,9 +1,6 @@
-# Arch Linux / Debian / I3 / NVIM / FISH Dotfiles
-
+# Arch Linux / fish / hyprland / waybar/ i3 / mpd / ncmcpp / nvim Dotfiles
 ![](./demo.png)
 
-**Setup I3 and GUI Apps If Root**
-[setupgui.sh](https://github.com/sheeeeee33eeesh/DotFiles/blob/master/scripts/setupgui.sh)
 
 **Copy Config Files For Non Root Users**
 [nonroot-setupconsole.sh](https://github.com/sheeeeee33eeesh/DotFiles/blob/master/scripts/nonroot-setupconsole)

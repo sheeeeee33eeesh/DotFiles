@@ -10,67 +10,38 @@ if status is-interactive
    set LANG en_US.UTF-8
    set PAGER cat
    set EDITOR nvim
-   fish_add_path ~/.local/bin/
 
    # Options
    set -U fish_greeting
    set -g theme_nerd_fonts yes
 
+   fish_add_path ~/.local/bin/
+
    # Binds
    fzf_configure_bindings --variables=\e\cv
    bind \el 'ls -lah ; echo -e "\n" ; commandline -f repaint'
 
-
-
-
-
    # Aliases
+   alias WEZTERM="nvim ~/.wezterm.lua"
    alias FISHRC="cd ~/.config/fish/ && nvim config.fish && cd -"
    alias ls='ls --color'
-   alias vim='nvim'
-   alias c='clear'
-   alias l='ls -la'
-   alias ll='ls -l'
-   alias la='ls -A'
-   alias lla='ls -la'
-   alias lal='ls -la'
-   alias lah='ls -lah'
-   alias cls='clear'
-   alias c='clear'
-   alias COPY="tr -d '\n' | xsel -ib"
    alias LOWER="tr '[:upper:]' '[:lower:]'"
    alias UPPER="tr '[:lower:]' '[:upper:]'"
-   alias REMOVENEWLINE='tr -d "\n"'
-   alias DOTFILES="cd ~/.config/nvim/;nvim; cd -"
-   alias I3="cd ~/.config/i3;nvim; cd -"
+   alias NVIM="cd ~/.config/nvim/ ; nvim ~/.config/nvim/init.lua; cd -"
+   alias HYPR="cd ~/.config/hypr/;nvim ~/.config/hypr/hyprland.conf ; cd -"
+   alias WAYBAR="cd ~/.config/waybar/ ; nvim ~/.config/waybar/config.jsonc ; cd -"
+   alias I3="cd ~/.config/i3 ; nvim ~/.config/i3/config ; cd -"
    alias PICOM="nvim ~/.config/picom.conf"
-   alias ZSHRC="nvim ~/.zshrc"
    alias KITTYRC="nvim ~/.config/kitty/kitty.conf"
-   alias NSFW="nitrogen --set-scaled --random ~/.config/i3/wallpapers/"
-   alias SFW="nitrogen --set-scaled ~/.config/i3/wallpapers/SFW/space.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG1="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl1.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG2="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl2.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG3="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl3.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG4="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl4.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG5="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl5.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG6="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl6.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG7="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl7.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG8="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl8.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG9="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl9.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG10="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl10.png && kill $(pgrep -f slideshowwallpaper.sh)"
-   alias AG11="nitrogen --set-scaled ~/.config/i3/wallpapers/archgirl11.png && kill $(pgrep -f slideshowwallpaper.sh)"
    alias ip="ip -c"
-   alias SLEEPOFF="xset s off -dpms"
-   alias SLEEPON="xset s on -dpms"
    alias SUM='tr "\n" "+"| sed "s/.\$//g"| math'
-   alias RENDER="kitten icat"
+   alias RENDER="wezterm imgcat"
+   alias ssh="env TERM=xterm-256color ssh"
 
-
-   export EDITOR=/usr/bin/nvim
-   export PAGER=cat
 
 end
 
+## Loop Examples
 # for i in (seq 00 99) ; echo $i ; end
 # while true ; ls -l ; end
 # while read line ; echo $line ; end < file.txt

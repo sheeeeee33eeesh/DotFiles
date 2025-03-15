@@ -59,3 +59,4 @@ vim.keymap.set('n', '<leader>r', ':so<CR>')
 -- Split Shortcuts
 vim.keymap.set('n', '<leader>tv', ':split|set nonumber|terminal<CR>i')
 vim.keymap.set('n', '<leader>th', ':vsplit|set nonumber|terminal<CR>i')
+vim.keymap.set('n', '<C-h>', vim.cmd.UndotreeToggle)
