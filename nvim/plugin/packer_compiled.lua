@@ -79,60 +79,78 @@ _G.packer_plugins = {
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["ansible-snippets"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/ansible-snippets",
-    url = "https://github.com/phenomenes/ansible-snippets"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-calc"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-calc",
+    url = "https://github.com/hrsh7th/cmp-calc"
   },
   ["cmp-cmdline"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
-  ["cmp-mini-snippets"] = {
+  ["cmp-cmdline-history"] = {
     loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-mini-snippets",
-    url = "https://github.com/abeldekat/cmp-mini-snippets"
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-cmdline-history",
+    url = "https://github.com/dmitmel/cmp-cmdline-history"
+  },
+  ["cmp-copilot"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-copilot",
+    url = "https://github.com/hrsh7th/cmp-copilot"
+  },
+  ["cmp-emoji"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-emoji",
+    url = "https://github.com/hrsh7th/cmp-emoji"
+  },
+  ["cmp-fish"] = {
+    after_files = { "/home/elitegaming/.local/share/nvim/site/pack/packer/opt/cmp-fish/after/plugin/cmp_fish.lua" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/opt/cmp-fish",
+    url = "https://github.com/mtoohey31/cmp-fish"
+  },
+  ["cmp-nerdfont"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-nerdfont",
+    url = "https://github.com/chrisgrieser/cmp-nerdfont"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-ultisnips"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
-    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
-  },
-  ["cmp-snippy"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-snippy",
-    url = "https://github.com/dcampos/cmp-snippy"
-  },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   cmp_luasnip = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -148,11 +166,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["mini.snippets"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/mini.snippets",
-    url = "https://github.com/echasnovski/mini.snippets"
   },
   nvim = {
     loaded = true,
@@ -173,11 +186,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-snippy"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-snippy",
-    url = "https://github.com/dcampos/nvim-snippy"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -204,29 +212,43 @@ _G.packer_plugins = {
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["render-markdown.nvim"] = {
+    config = { "\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/opt/render-markdown.nvim",
+    url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ultisnips = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/SirVer/ultisnips"
-  },
   undotree = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/vim-vsnip",
-    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd render-markdown.nvim ]]
+
+-- Config for: render-markdown.nvim
+try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0", "config", "render-markdown.nvim")
+
+time([[Sequenced loading]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType fish ++once lua require("packer.load")({'cmp-fish'}, { ft = "fish" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

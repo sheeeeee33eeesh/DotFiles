@@ -1,8 +1,15 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
-require("lspconfig").bashls.setup {}
-require'lspconfig'.ansiblels.setup{}
-require'lspconfig'.basedpyright.setup{}
-require'lspconfig'.pyright.setup{}
+require("mason-lspconfig").setup_handlers{
+  function (server_name) -- default handler (optional)
+      require("lspconfig")[server_name].setup {}
+  end,
+}
 
-require'lspconfig'.jedi_language_server.setup{}
+
+require'lspconfig'.ansiblels.setup{
+  filetypes = {
+    "yaml",
+  },
+  shell = {"/usr/bin/fish"},
+}

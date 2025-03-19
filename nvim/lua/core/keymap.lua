@@ -8,8 +8,7 @@ vim.cmd("set wrap")
 vim.g.mapleader = ' '
 vim.g.mallocalleader = ' '
 
-
--- Allows Back For EOLs and Stuff
+-- Allow Backspace On EOLs
 vim.opt.backspace = '2'
 
 -- Displays Command In Last Line Of Windows
@@ -25,10 +24,10 @@ vim.opt.cursorline = true
 vim.opt.autoread = true
 
 -- Sets Tab To 2 Spaces
-vim.opt.tabstop = 3
+vim.opt.tabstop = 2
 
 -- Sets Indentiation To 3 Spaces
-vim.opt.shiftwidth = 3
+vim.opt.shiftwidth = 2
 
 -- Round Indentations To Nearest Multiple of Shiftwidth
 vim.opt.shiftround = true
@@ -40,7 +39,7 @@ vim.opt.expandtab = true
 -- Clears Highlighted Search
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
--- Sets NVIM Clipboard  To System Clipboard
+-- Sets NVIM Clipboard To System Clipboard
 vim.cmd ("set clipboard=unnamedplus")
 
 -- Sets EOB to Space
@@ -55,8 +54,25 @@ vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q!<CR>')
 vim.keymap.set('n', '<leader>r', ':so<CR>')
 
-
 -- Split Shortcuts
 vim.keymap.set('n', '<leader>tv', ':split|set nonumber|terminal<CR>i')
 vim.keymap.set('n', '<leader>th', ':vsplit|set nonumber|terminal<CR>i')
 vim.keymap.set('n', '<C-h>', vim.cmd.UndotreeToggle)
+
+-- Set Specific Filetypes
+vim.filetype.add({
+  filename = {
+    ["docker-compose.yml"] = "yaml.docker-compose",
+    ["docker-compose.yaml"] = "yaml.docker-compose",
+    ["compose.yml"] = "yaml.docker-compose",
+    ["compose.yaml"] = "yaml.docker-compose",
+  },
+})
+
+
+-- Copilot Keymaps
+vim.keymap.set('i', '<C-SPACE>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
