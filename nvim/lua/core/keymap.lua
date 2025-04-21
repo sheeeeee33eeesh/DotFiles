@@ -71,7 +71,7 @@ vim.filetype.add({
 
 
 -- Copilot Keymaps
-vim.keymap.set('i', '<C-SPACE>', 'copilot#Accept("\\<CR>")', {
+vim.keymap.set('i', '<C-a>', 'copilot#Accept("\\<CR>")', {
   expr = true,
   replace_keycodes = false
 })

@@ -1,10 +1,10 @@
 {
    "layer": "top",
    "position": "bottom",
-   "margin-top": 5,
-   "margin-bottom": 5,
-   "margin-left": 5,
-   "margin-right": 5,
+   "margin-top": 7,
+   "margin-bottom": 7,
+   "margin-left": 7,
+   "margin-right": 7,
    "height": 35,
    "spacing": 7,
    "interval": 1,
@@ -13,7 +13,7 @@
        "custom/weather"
    ],
    "modules-center": [
-       "hyprland/window",
+//       "hyprland/window",
        "mpd"
    ],
    "modules-right": [
@@ -36,7 +36,7 @@
            "car": "",
            "default": ["", "", ""]
        },
-       "on-click": "pavucontrol"
+       "on-click": "pulsemixer"
    },
    "custom/weather": {
        "exec": "python ~/.config/waybar/scripts/weather.py",

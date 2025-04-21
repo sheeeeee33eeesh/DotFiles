@@ -5,11 +5,9 @@ require("mason-lspconfig").setup_handlers{
       require("lspconfig")[server_name].setup {}
   end,
 }
-
-
-require'lspconfig'.ansiblels.setup{
-  filetypes = {
-    "yaml",
-  },
-  shell = {"/usr/bin/fish"},
-}
+--require'lspconfig'.ansiblels.setup{
+--  filetypes = {
+--    "yaml",
+--  },
+--  shell = {"/usr/bin/fish"},
+--}

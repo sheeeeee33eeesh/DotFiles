@@ -2,9 +2,9 @@ require("core.config.nvim-cmp")
 require("core.config.lsp")
 require("core.config.nvim-tree")
 require("core.config.treesitter")
-require("core.config.undotree")
 require("core.config.telescope")
 require("core.config.catpuccin")
 require("core.config.lualine")
-require('nvim-autopairs').setup {}
-require('ibl').setup()
+require("nvim-autopairs").setup()
+require("ibl").setup()
+
