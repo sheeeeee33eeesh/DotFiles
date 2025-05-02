@@ -1,6 +1,17 @@
-require("mason").setup()
+require("mason").setup{
+  ui = {
+    border = "rounded",
+  },
+}
 require("mason-lspconfig").setup{
-  ensure_installed = {},
+  ensure_installed = {
+    "arduino_language_server",
+    "bashls",
+    "clangd",
+    "dockerls",
+    "jedi_language_server",
+    "pyright",
+  },
 }
 
 require("mason-lspconfig").setup_handlers{
