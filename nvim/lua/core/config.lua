@@ -5,6 +5,6 @@ require("core.config.treesitter")
 require("core.config.telescope")
 require("core.config.catpuccin")
 require("core.config.lualine")
+require("core.config.ibl")
 require("nvim-autopairs").setup()
-require("ibl").setup()
 
