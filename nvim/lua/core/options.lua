@@ -1,55 +1,38 @@
-
 -- Turn On Line Numbers
 vim.cmd("set number")
-
 -- Turn On Line Wrap
 vim.cmd("set wrap")
-
 -- Set Leader To <SPACE>
-vim.g.mapleader = ' '
-vim.g.mallocalleader = ' '
-
+vim.g.mapleader = " "
+vim.g.mallocalleader = " "
 -- Allow Backspace On EOLs
-vim.opt.backspace = '2'
-
+vim.opt.backspace = "2"
 -- Displays Command In Last Line Of Windows
 vim.opt.showcmd = True
-
 -- Auto Save Buffers
 vim.autowrite = true
-
 -- Highlights Current Line
 vim.opt.cursorline = true
-
 -- Auto Reloads  Files
 vim.opt.autoread = true
-
 -- Sets Tab To 2 Spaces
 vim.opt.tabstop = 2
-
 -- Sets Indentiation To 3 Spaces
 vim.opt.shiftwidth = 2
-
 -- Round Indentations To Nearest Multiple of Shiftwidth
 vim.opt.shiftround = true
-
 -- Converts Tabs To Spaces
 vim.opt.expandtab = true
-
 -- Sets EOB to Space
-vim.opt.fillchars = {eob= " "}
-
+vim.opt.fillchars = { eob = " " }
 -- Sets NVIM Clipboard To System Clipboard
-vim.cmd ("set clipboard=unnamedplus")
-
--- Set Specific Filetypes
-vim.filetype.add({
-  filename = {
-    ["docker-compose.yml"] = "yaml.docker-compose",
-    ["docker-compose.yaml"] = "yaml.docker-compose",
-    ["compose.yml"] = "yaml.docker-compose",
-    ["compose.yaml"] = "yaml.docker-compose",
-  },
-})
-
+vim.cmd("set clipboard=unnamedplus")
+-- Unmap Copilot Tab
 vim.g.copilot_no_tab_map = true
+
+vim.diagnostic.config({
+	virtual_text = true,
+	underline = true,
+	virutal_lines = true,
+	signs = true,
+})
