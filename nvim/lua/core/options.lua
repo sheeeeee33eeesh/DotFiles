@@ -27,12 +27,10 @@ vim.opt.expandtab = true
 vim.opt.fillchars = { eob = " " }
 -- Sets NVIM Clipboard To System Clipboard
 vim.cmd("set clipboard=unnamedplus")
--- Unmap Copilot Tab
-vim.g.copilot_no_tab_map = true
 
 vim.diagnostic.config({
-	virtual_text = true,
-	underline = true,
-	virutal_lines = true,
-	signs = true,
+  virtual_text = true,
+  underline = true,
+  virutal_lines = true,
+  signs = true,
 })

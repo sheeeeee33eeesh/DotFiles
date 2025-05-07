@@ -12,8 +12,7 @@ vim.keymap.set("n", "<leader>r", ":so<CR>")
 vim.keymap.set("n", "<leader>tv", ":split|set nonumber|terminal<CR>i")
 vim.keymap.set("n", "<leader>th", ":vsplit|set nonumber|terminal<CR>i")
 vim.keymap.set("n", "<C-h>", vim.cmd.UndotreeToggle)
--- Copilot Keymaps
-vim.keymap.set("i", "<C-a>", 'copilot#Accept("\\<CR>")', {
-	expr = true,
-	replace_keycodes = false,
-})
+
+-- SO
+vim.keymap.set("n", "<leader>ws", ":wa!|source %<CR>")
+vim.keymap.set("n", "<leader>wsp", ":wa!|source %|PackerSync<CR>")

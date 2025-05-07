@@ -1,12 +1,12 @@
 require("telescope").setup({
-	defaults = {
-		mappings = {
-			i = {
-				["<C-j>"] = "preview_scrolling_down",
-				["<C-k>"] = "preview_scrolling_up",
-			},
-		},
-	},
+  defaults = {
+    mappings = {
+      i = {
+        ["<C-j>"] = "preview_scrolling_down",
+        ["<C-k>"] = "preview_scrolling_up",
+      },
+    },
+  },
 })
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>p", builtin.find_files, {})

@@ -105,11 +105,8 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-emoji"
   },
   ["cmp-fish"] = {
-    after_files = { "/home/elitegaming/.local/share/nvim/site/pack/packer/opt/cmp-fish/after/plugin/cmp_fish.lua" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/opt/cmp-fish",
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp-fish",
     url = "https://github.com/mtoohey31/cmp-fish"
   },
   ["cmp-nerdfont"] = {
@@ -132,10 +129,20 @@ _G.packer_plugins = {
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["copilot.vim"] = {
+  ["commasemi.nvim"] = {
     loaded = true,
-    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/commasemi.nvim",
+    url = "https://github.com/saifulapm/commasemi.nvim"
+  },
+  ["copilot.lua"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/copilot.lua",
+    url = "https://github.com/zbirenbaum/copilot.lua"
+  },
+  ["hologram.nvim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/hologram.nvim",
+    url = "https://github.com/edluffy/hologram.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -177,10 +184,20 @@ _G.packer_plugins = {
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
   ["none-ls.nvim"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
     url = "https://github.com/nvimtools/none-ls.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   nvim = {
     loaded = true,
@@ -217,6 +234,21 @@ _G.packer_plugins = {
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-nio",
     url = "https://github.com/nvim-neotest/nvim-nio"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-platformio.lua"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-platformio.lua",
+    url = "https://github.com/anurag3301/nvim-platformio.lua"
+  },
+  ["nvim-toggleterm.lua"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-toggleterm.lua",
+    url = "https://github.com/akinsho/nvim-toggleterm.lua"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -242,6 +274,11 @@ _G.packer_plugins = {
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
+  },
   ["render-markdown.nvim"] = {
     config = { "\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0" },
     loaded = true,
@@ -252,6 +289,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/elitegaming/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
@@ -265,13 +307,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for render-markdown.nvim]], true)
 try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0", "config", "render-markdown.nvim")
 time([[Config for render-markdown.nvim]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType fish ++once lua require("packer.load")({'cmp-fish'}, { ft = "fish" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
