@@ -1,4 +1,3 @@
-require("core.options")
-require("core.keymap")
-require("core.packer")
-require("core.config")
+require("config.options")
+require("config.keymaps")
+require("config.lazy")

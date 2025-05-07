@@ -1,5 +1,3 @@
--- Turn On Line Numbers
-vim.cmd("set number")
 -- Turn On Line Wrap
 vim.cmd("set wrap")
 -- Set Leader To <SPACE>
@@ -27,6 +25,9 @@ vim.opt.expandtab = true
 vim.opt.fillchars = { eob = " " }
 -- Sets NVIM Clipboard To System Clipboard
 vim.cmd("set clipboard=unnamedplus")
+-- Relative Line Numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 vim.diagnostic.config({
   virtual_text = true,
@@ -34,3 +35,4 @@ vim.diagnostic.config({
   virutal_lines = true,
   signs = true,
 })
+
