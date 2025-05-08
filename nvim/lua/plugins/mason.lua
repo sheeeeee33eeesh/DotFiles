@@ -24,8 +24,7 @@ return {
         "pyright",
       },
       automatic_enable = true,
-    }
-
+    },
   },
 
   {
@@ -35,9 +34,9 @@ return {
       "williamboman/mason.nvim",
       "nvimtools/none-ls.nvim",
     },
---    config = function()
---      require("your.null-ls.config")
---    end,
+    --    config = function()
+    --      require("your.null-ls.config")
+    --    end,
     opts = {
       ensure_installed = {
         "stylua",
@@ -65,8 +64,6 @@ return {
         "python",
       },
       automatic_installation = true,
-    }
+    },
   },
 }
-
-

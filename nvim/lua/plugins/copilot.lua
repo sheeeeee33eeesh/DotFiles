@@ -1,8 +1,8 @@
 return {
   {
-		"zbirenbaum/copilot.lua",
+    "zbirenbaum/copilot.lua",
     opts = {
-     panel = {
+      panel = {
         enabled = true,
         auto_refresh = true,
         keymap = {
@@ -32,6 +32,6 @@ return {
           dismiss = "<C-]>",
         },
       },
-    }
-  }
+    },
+  },
 }

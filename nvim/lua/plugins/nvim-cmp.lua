@@ -14,15 +14,19 @@ return {
 
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
+
+      "hrsh7th/cmp-calc",
+      "hrsh7th/cmp-emoji",
+      "chrisgrieser/cmp-nerdfont",
+      "dmitmel/cmp-cmdline-history",
+      "mtoohey31/cmp-fish",
     },
 
-
     opts = function()
-
       local cmp_autopairs = require("nvim-autopairs.completion.cmp")
       local cmp = require("cmp")
       local lspkind = require("lspkind")
-      
+
       cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
       -- Buffer Configuration ------------------------------------------
       cmp.setup({
@@ -87,7 +91,7 @@ return {
         },
       })
       -- Buffer Configuration ':' --------------------------------------
-        cmp.setup.cmdline(":", {
+      cmp.setup.cmdline(":", {
         mapping = cmp.mapping.preset.cmdline(),
         sources = cmp.config.sources({
           { name = "cmdline_history" },
@@ -103,9 +107,6 @@ return {
           },
         },
       })
-
-    end
-  }
+    end,
+  },
 }
-
-

@@ -1,12 +1,10 @@
 return {
-  {
-    "folke/snacks.nvim",
-    priority = 1000,
-    opts = {
-      image = {
-      },
---      indent = {
---      },
-    },
-  }
+	{
+		"folke/snacks.nvim",
+		priority = 1000,
+		opts = {
+			image = {},
+			indent = {},
+		},
+	},
 }

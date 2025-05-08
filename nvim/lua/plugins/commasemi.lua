@@ -5,6 +5,6 @@ return {
       leader = "<leader>",
       keymaps = true,
       commands = true,
-    }
-  }
+    },
+  },
 }

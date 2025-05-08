@@ -116,18 +116,16 @@ return {
   },
 
   {
-      "folke/neodev.nvim",
-      opts = {
-        library = {
-          plugins =
-          {
-            "nvim-dap-ui",
-          },
-          types = true
+    "folke/neodev.nvim",
+    opts = {
+      library = {
+        plugins = {
+          "nvim-dap-ui",
         },
-      }
+        types = true,
+      },
+    },
   },
-
 
   {
     "rcarriga/nvim-dap-ui",
@@ -135,14 +133,13 @@ return {
       "folke/neodev.nvim",
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
-
     },
     config = function()
       require("dapui").setup()
     end,
 
     keys = {
-      {"<leader>du", "<cmd>lua require('dapui').toggle()<cr>"},
+      { "<leader>du", "<cmd>lua require('dapui').toggle()<cr>" },
     },
   },
 }
