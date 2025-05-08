@@ -1,7 +1,7 @@
 return {
 	{
 		"mason-org/mason.nvim",
-		lazy = true,
+    lazy = true,
 		config = {
 			ui = {
 				border = "rounded",
@@ -55,7 +55,7 @@ return {
 
 	{
 		"jay-babu/mason-nvim-dap.nvim",
-		lazy = true,
+    lazy = true,
 		dependencies = {
 			"mason-org/mason.nvim",
 			"mfussenegger/nvim-dap",

@@ -1,7 +1,7 @@
 return {
 	{
 		"mfussenegger/nvim-dap",
-		lazy = true,
+    lazy = true,
 		config = function()
 			local dap = require("dap")
 			-- Bash Setup
@@ -107,14 +107,14 @@ return {
 			dap.configurations.c = dap.configurations.cpp
 		end,
 		keys = {
-			{ "<leader>dc", "<cmd>lua require('dap').continue()<CR>" },
-			{ "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>" },
-			{ "<leader>dr", "<cmd>lua require('dap').step_over()<CR>" },
-			{ "<leader>di", "<cmd>lua require('dap').step_into()<CR>" },
-			{ "<leader>do", "<cmd>lua require('dap').step_out()<CR>" },
-			{ "<leader>dI", "<cmd>lua require('dap').step_back()<CR>" },
-			{ "<leader>dq", "<cmd>lua require('dap').terminal()<CR>" },
-		},
+      { "<leader>dc", "<cmd>lua require('dap').continue()<CR>"},
+      { "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>"},
+      { "<leader>dr", "<cmd>lua require('dap').step_over()<CR>"},
+      { "<leader>di", "<cmd>lua require('dap').step_into()<CR>"},
+      { "<leader>do", "<cmd>lua require('dap').step_out()<CR>"},
+      { "<leader>dI", "<cmd>lua require('dap').step_back()<CR>"},
+      { "<leader>dq", "<cmd>lua require('dap').terminal()<CR>"},
+    },
 	},
 
 	{

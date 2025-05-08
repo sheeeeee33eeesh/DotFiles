@@ -1,7 +1,7 @@
 return {
 	{
 		"andweeb/presence.nvim",
-		event = "VeryLazy",
+    event = "VeryLazy",
 		opts = {
 			auto_update = true,
 			neovim_image_text = "The One True Text Editor",

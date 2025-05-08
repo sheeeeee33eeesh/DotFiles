@@ -1,7 +1,7 @@
 return {
 	{
 		"zbirenbaum/copilot.lua",
-		event = "InsertEnter",
+    event = "InsertEnter",
 		opts = {
 			panel = {
 				enabled = true,

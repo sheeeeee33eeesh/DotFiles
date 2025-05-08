@@ -9,6 +9,6 @@ return {
 		keys = {
 			{ "<leader>,", "<cmd>CommaToggle<cr>" },
 			{ "<leader>;", "<cmd>SemiToggle<cr>" },
-		},
+    },
 	},
 }

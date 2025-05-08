@@ -19,6 +19,10 @@ vim.keymap.set("n", "<leader>wsp", ":wa!|source %|Lazy sync<CR>")
 vim.keymap.set("n", "<leader>ls", ":Lazy show<CR>")
 vim.keymap.set("n", "<leader>m", ":Mason<CR>")
 
+
 -- Folds
 vim.keymap.set("n", "<leader>fo", ":foldopen<CR>")
 vim.keymap.set("n", "<leader>fc", ":foldclose<CR>")
+
+
+
