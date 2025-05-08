@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
+		event = "VeryLazy",
 		opts = {
 			options = {
 				icons_enabled = true,

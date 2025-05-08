@@ -2,11 +2,8 @@ return {
 	{
 		"mfussenegger/nvim-dap",
 		lazy = true,
-    dependencies = {
-    },
 		config = function()
 			local dap = require("dap")
-
 			-- Bash Setup
 			dap.adapters.bashdb = {
 				type = "executable",
@@ -108,22 +105,21 @@ return {
 				},
 			}
 			dap.configurations.c = dap.configurations.cpp
-			vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, {})
-			vim.keymap.set("n", "<leader>dc", dap.continue, {})
-			vim.keymap.set("n", "<leader>dr", dap.step_over, {})
-			vim.keymap.set("n", "<leader>di", dap.step_into, {})
-			vim.keymap.set("n", "<leader>do", dap.step_out, {})
-			vim.keymap.set("n", "<leader>dI", dap.step_back, {})
-			vim.keymap.set("n", "<leader>dq", dap.terminate, {})
 		end,
-    keys = {
-
-    },
+		keys = {
+			{ "<leader>dc", "<cmd>lua require('dap').continue()<CR>" },
+			{ "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>" },
+			{ "<leader>dr", "<cmd>lua require('dap').step_over()<CR>" },
+			{ "<leader>di", "<cmd>lua require('dap').step_into()<CR>" },
+			{ "<leader>do", "<cmd>lua require('dap').step_out()<CR>" },
+			{ "<leader>dI", "<cmd>lua require('dap').step_back()<CR>" },
+			{ "<leader>dq", "<cmd>lua require('dap').terminal()<CR>" },
+		},
 	},
 
 	{
 		"folke/neodev.nvim",
-    lazy = true,
+		lazy = true,
 		opts = {
 			library = {
 				plugins = {
@@ -137,10 +133,10 @@ return {
 	{
 		"rcarriga/nvim-dap-ui",
 		dependencies = {
-		  "folke/neodev.nvim",
+			"folke/neodev.nvim",
 			"mfussenegger/nvim-dap",
 			"nvim-neotest/nvim-nio",
-		  "jay-babu/mason-nvim-dap.nvim",
+			"jay-babu/mason-nvim-dap.nvim",
 		},
 		config = function()
 			require("dapui").setup()
