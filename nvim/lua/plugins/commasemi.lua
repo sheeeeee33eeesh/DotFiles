@@ -1,10 +1,10 @@
 return {
-  {
-    "saifulapm/commasemi.nvim",
-    opts = {
-      leader = "<leader>",
-      keymaps = true,
-      commands = true,
-    },
-  },
+	{
+		"saifulapm/commasemi.nvim",
+		opts = {
+			leader = "<leader>",
+			keymaps = true,
+			commands = true,
+		},
+	},
 }

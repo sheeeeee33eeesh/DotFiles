@@ -16,4 +16,3 @@ vim.keymap.set("n", "<C-h>", vim.cmd.UndotreeToggle)
 -- SO
 vim.keymap.set("n", "<leader>ws", ":wa!|source %<CR>")
 vim.keymap.set("n", "<leader>wsp", ":wa!|source %|Lazy sync<CR>")
-

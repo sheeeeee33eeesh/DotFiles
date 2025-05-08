@@ -30,8 +30,8 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.diagnostic.config({
-  virtual_text = true,
-  underline = false,
-  virutal_lines = true,
-  signs = true,
+	virtual_text = true,
+	underline = false,
+	virutal_lines = true,
+	signs = true,
 })
