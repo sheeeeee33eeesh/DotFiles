@@ -6,5 +6,9 @@ return {
 			keymaps = true,
 			commands = true,
 		},
+		keys = {
+			{ "<leader>,", "<cmd>CommaToggle<cr>" },
+			{ "<leader>;", "<cmd>SemiToggle<cr>" },
+    },
 	},
 }

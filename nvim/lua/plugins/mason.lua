@@ -1,6 +1,7 @@
 return {
 	{
 		"mason-org/mason.nvim",
+    lazy = true,
 		opts = {
 			ui = {
 				border = "rounded",
@@ -10,6 +11,7 @@ return {
 
 	{
 		"mason-org/mason-lspconfig.nvim",
+		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
 			"mason-org/mason.nvim",
 			"mason-org/mason-lspconfig.nvim",
@@ -31,7 +33,7 @@ return {
 		"jay-babu/mason-null-ls.nvim",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
-			"williamboman/mason.nvim",
+			"mason-org/mason.nvim",
 			"nvimtools/none-ls.nvim",
 		},
 		--    config = function()
@@ -53,8 +55,9 @@ return {
 
 	{
 		"jay-babu/mason-nvim-dap.nvim",
+    lazy = true,
 		dependencies = {
-			"williamboman/mason.nvim",
+			"mason-org/mason.nvim",
 			"mfussenegger/nvim-dap",
 		},
 		opts = {

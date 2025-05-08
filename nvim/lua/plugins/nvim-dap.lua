@@ -1,7 +1,9 @@
 return {
 	{
 		"mfussenegger/nvim-dap",
-		lazy = false,
+		lazy = true,
+    dependencies = {
+    },
 		config = function()
 			local dap = require("dap")
 
@@ -114,10 +116,14 @@ return {
 			vim.keymap.set("n", "<leader>dI", dap.step_back, {})
 			vim.keymap.set("n", "<leader>dq", dap.terminate, {})
 		end,
+    keys = {
+
+    },
 	},
 
 	{
 		"folke/neodev.nvim",
+    lazy = true,
 		opts = {
 			library = {
 				plugins = {
@@ -131,9 +137,10 @@ return {
 	{
 		"rcarriga/nvim-dap-ui",
 		dependencies = {
-			"folke/neodev.nvim",
+		  "folke/neodev.nvim",
 			"mfussenegger/nvim-dap",
 			"nvim-neotest/nvim-nio",
+		  "jay-babu/mason-nvim-dap.nvim",
 		},
 		config = function()
 			require("dapui").setup()
