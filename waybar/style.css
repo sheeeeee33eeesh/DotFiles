@@ -8,108 +8,97 @@ window#waybar {
    background: transparent;
 }
 
-#netadapters{
+/* Workspace Numbers */
+#workspaces {
+   opacity: 0.75;
    background-color: #FFFFFF;
-   opacity: 0.6;
    border-radius: 12px;
-   padding-left: 5px;
-   padding-right: 5px;
    transition-property: all;
    transition-duration: .3s;
 }
+#workspaces button.active {
+  opacity: 1;
+  background-color: #dbdbdb;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 12px;
+  transition-property: all;
+  transition-duration: .3s;
+}
 
+/* Network Diagnostics */
+#network {
+   opacity: 0.75;
+   background-color: #FFFFFF;
+   padding-left: 5px;
+   padding-right: 5px;
+   border-radius: 12px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+#network.disconnected {
+  opacity: 0;
+}
+#network.disabled {
+  opacity: 0;
+}
+
+/* Hardware Performance */
 #performance {
    background-color: #FFFFFF;
-   opacity: 0.6;
+   opacity: 0.75;
    padding-left: 5px;
    padding-right: 5px;
    border-radius: 12px;
    transition-property: all;
    transition-duration: .3s;
 }
-
-#network {
-   padding-left: 5px;
-   padding-right: 5px;
-}
-
 #cpu {
    padding-left: 5px;
    padding-right: 5px;
 }
-
 #memory {
    padding-left: 5px;
    padding-right: 5px;
 }
-
 #disk {
    padding-left: 5px;
    padding-right: 5px;
 }
 
-#workspaces {
-   opacity: 0.6;
+/* Brightness / Backlight */
+#backlight {
+   opacity: 0.75;
    background-color: #FFFFFF;
+   padding-left: 10px;
+   padding-right: 10px;
    border-radius: 12px;
    transition-property: all;
    transition-duration: .3s;
 }
 
-#workspaces button.active {
-   opacity: 0.6; background-color: #EEEEEE;
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
-#idle_inhibitor {
-   background-color: #FFFFFF;
-   opacity: 0.6;
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
+/* Battery */
 #battery {
    background-color: #FFFFFF;
-   opacity: 0.6;
+   opacity: 0.75;
    padding-left: 10px;
    padding-right: 20px;
    border-radius: 12px;
    transition-property: all;
    transition-duration: .3s;
 }
-
-#clock {
-   background-color: #FFFFFF;
-   color: #000000;
-   opacity: 0.6;
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
+#battery.warning {
+   background-color: #FFEE00;
+}
+#battery.critical {
+   background-color: #FF0000;
 }
 
-#tray {
-   background-color: #FFFFFF;
-   opacity: 0.6;
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
+/* Pulseaudio */
 #pulseaudio {
    background-color: #FFFFFF;
    color: #000000;
-   opacity: 0.6;
+   opacity: 0.75;
    padding-left: 20px;
    padding-right: 20px;
    border-radius: 12px;
@@ -117,48 +106,9 @@ window#waybar {
    transition-duration: .3s;
 }
 
-#mpd {
-   opacity: 0.6;
-   background-color: #FFFFFF;
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
-#window {
-   background-color: #FFFFFF;
-   opacity: 0.6;
-   padding-left: 20px;
-   padding-right: 20px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
-#network {
-   opacity: 0.6;
-   background-color: #FFFFFF;
-   padding-left: 5px;
-   padding-right: 5px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
-#backlight {
-   opacity: 0.6;
-   background-color: #FFFFFF;
-   padding-left: 10px;
-   padding-right: 10px;
-   border-radius: 12px;
-   transition-property: all;
-   transition-duration: .3s;
-}
-
+/* Weather */
 #custom-weather {
-   opacity: 0.6;
+   opacity: 0.75;
    background-color: #FFFFFF;
    padding-left: 10px;
    padding-right: 10px;
@@ -166,4 +116,41 @@ window#waybar {
    transition-property: all;
    transition-duration: .3s;
    color: #000000;
+}
+
+/* Current Window */
+#window {
+   background-color: #FFFFFF;
+   opacity: 0.75;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 12px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+window#waybar.empty #window {
+  opacity: 0;
+}
+
+/* Clock / Date */
+#clock {
+   background-color: #FFFFFF;
+   color: #000000;
+   opacity: 0.75;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 12px;
+   transition-property: all;
+   transition-duration: .3s;
+}
+
+/* Tray Icons */
+#tray {
+   background-color: #FFFFFF;
+   opacity: 0.75;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 12px;
+   transition-property: all;
+   transition-duration: .3s;
 }

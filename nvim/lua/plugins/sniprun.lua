@@ -1,7 +1,7 @@
 return {
-	{
-		"michaelb/sniprun",
-		build = "sh install.sh",
+  {
+    "michaelb/sniprun",
+    build = "sh install.sh",
     cmd = {
       "SnipReplMemoryClean",
       "SnipReset",
@@ -10,12 +10,12 @@ return {
       "SnipRun",
       "SnipInfo",
     },
-		opts = {
-			display = { "Terminal" },
-		},
-    keys = {
-			{ "<leader>r", "<cmd>SnipRun<cr>" },
-			{ mode = "v", "<leader>r", "<cmd>'<,'>SnipRun<cr>" },
+    opts = {
+      display = { "Terminal" },
     },
-	},
+    keys = {
+      { "<leader>r", "<cmd>SnipRun<cr>" },
+      { mode = "v",  "<leader>r",       "<cmd>'<,'>SnipRun<cr>" },
+    },
+  },
 }

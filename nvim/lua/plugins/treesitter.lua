@@ -2,9 +2,6 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
-		dependencies = {
-			"filNaj/tree-setter",
-		},
 		opts = {
 			highlight = { enable = true },
 			indent = { enable = true },

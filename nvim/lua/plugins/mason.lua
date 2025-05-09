@@ -36,9 +36,6 @@ return {
 			"mason-org/mason.nvim",
 			"nvimtools/none-ls.nvim",
 		},
-		--    config = function()
-		--      require("your.null-ls.config")
-		--    end,
 		opts = {
 			ensure_installed = {
 				"stylua",
