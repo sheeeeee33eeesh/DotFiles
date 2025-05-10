@@ -80,7 +80,7 @@
 
   // Memory Config
   "memory": {
-    "format": " {avail}GB"
+    "format": " {used}GiB"
   },
 
   // Disk Config
