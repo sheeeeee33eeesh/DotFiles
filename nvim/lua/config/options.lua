@@ -13,7 +13,7 @@ vim.autowrite = true
 -- Highlights Current Line
 vim.opt.cursorline = true
 
--- Auto Reloads  Files
+-- Auto Reloads Files
 vim.opt.autoread = true
 
 -- Sets Tab To 2 Spaces
@@ -38,9 +38,10 @@ vim.cmd("set clipboard=unnamedplus")
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Diagnostic
 vim.diagnostic.config({
-  virtual_text = true,
-  underline = false,
-  virutal_lines = true,
-  signs = true,
+	virtual_text = true,
+	underline = false,
+	virutal_lines = true,
+	signs = true,
 })
