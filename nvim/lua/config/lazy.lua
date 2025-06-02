@@ -27,4 +27,3 @@ require("lazy").setup({
 	install = { colorscheme = { "tokyonight", "habamax" } },
 	checker = { enabled = true },
 })
-vim.cmd([[colorscheme tokyonight]])
