@@ -9,6 +9,7 @@
   "height": 35,
   "spacing": 7,
   "interval": 1,
+  "output": "eDP-1",
 
   // Left Bar Modules
   "modules-left": [
