@@ -81,12 +81,12 @@
 
   // Memory Config
   "memory": {
-    "format": " {used}GiB"
+    "format": " {used:0.1f}/{total:0.0f}GiB"
   },
 
   // Disk Config
   "disk": {
-    "format": "🖴 {free}",
+    "format": "🖴 {used}/{total}",
     "path": "/"
 
   // Brightness / Backlight Config
