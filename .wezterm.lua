@@ -11,8 +11,8 @@ config.font_size = 16.0
 config.max_fps = 60
 config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
-config.keys = {
-	{ key = "V", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
-}
+--config.keys = {
+--	{ key = "V", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
+--}
 ---------------------------------------
 return config
