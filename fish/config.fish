@@ -8,9 +8,9 @@ if status is-interactive
   end
 
   # If Not In A NVIM Terminal cd Desktop
-  if test -z $NVIM
-    cd ~/Desktop
-  end
+  # if test -z $NVIM
+  #   cd ~/Desktop
+  # end
 
   # Environment Variables
   set -x LC_ALL en_US.UTF-8  
